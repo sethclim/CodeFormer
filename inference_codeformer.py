@@ -264,7 +264,7 @@ if __name__ == '__main__':
         height, width = video_frames[0].shape[:2]
         if args.suffix is not None:
             video_name = f'{video_name}_{args.suffix}.png'
-        save_restore_path = os.path.join(result_root, f'{video_name}.mp4')
+        save_restore_path = os.path.join(result_root, f'cf_finishedFile.mp4')
         vidwriter = VideoWriter(save_restore_path, height, width, fps, audio)
          
         for f in video_frames:
@@ -272,3 +272,4 @@ if __name__ == '__main__':
         vidwriter.close()
 
     print(f'\nAll results are saved in {result_root}')
+    print(f'\nvideo_name {video_name}.mp4')
