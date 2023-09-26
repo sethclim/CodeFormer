@@ -109,7 +109,7 @@ def make_cuda_ext(name, module, sources, sources_cuda=None):
 
 
 def get_requirements(filename='requirements.txt'):
-    with open(os.path.join('.', filename), 'r') as f:
+    with open(os.path.join('.', "CodeFormer", filename), 'r') as f:
         requires = [line.replace('\n', '') for line in f.readlines()]
     return requires
 
