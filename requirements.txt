@@ -8,11 +8,11 @@ pyyaml
 requests
 scikit-image
 scipy
-tb-nightly
+# tb-nightly
 torch>=1.7.1
 torchvision
 tqdm
 yapf
 lpips
-gdown # supports downloading the large file from Google Drive
+# gdown # supports downloading the large file from Google Drive
 ffmpeg-python
