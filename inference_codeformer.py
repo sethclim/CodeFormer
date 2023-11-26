@@ -79,7 +79,7 @@ if __name__ == '__main__':
     parser.add_argument('--suffix', type=str, default=None, help='Suffix of the restored faces. Default: None')
     parser.add_argument('--save_video_fps', type=float, default=None, help='Frame rate for saving video. Default: None')
 
-    args = parser.parse_args()
+    args = parser.parse_args()  
 
     # ------------------------ input & output ------------------------
     w = args.fidelity_weight

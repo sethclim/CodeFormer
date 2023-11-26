@@ -211,6 +211,7 @@ class RetinaFace(nn.Module):
         loc, conf, landmarks, priors = self.__detect_faces(image)
 
         boxes = decode(loc.data.squeeze(0), priors.data, self.cfg['variance'])
+
         boxes = boxes * self.scale / self.resize
         boxes = boxes.cpu().numpy()
 
